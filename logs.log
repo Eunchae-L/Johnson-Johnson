@@ -1,0 +1,1849 @@
+2024-02-07 10:35:26,371:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-07 10:35:26,372:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-07 10:35:26,372:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-07 10:35:26,372:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-07 10:35:26,901:INFO:PyCaret RegressionExperiment
+2024-02-07 10:35:26,902:INFO:Logging name: reg-default-name
+2024-02-07 10:35:26,902:INFO:ML Usecase: MLUsecase.REGRESSION
+2024-02-07 10:35:26,903:INFO:version 3.2.0
+2024-02-07 10:35:26,903:INFO:Initializing setup()
+2024-02-07 10:35:26,904:INFO:self.USI: d454
+2024-02-07 10:35:26,904:INFO:self._variable_keys: {'log_plots_param', '_available_plots', 'y_train', 'fold_generator', 'pipeline', 'data', 'y', 'html_param', 'USI', 'exp_id', 'gpu_param', 'y_test', 'n_jobs_param', 'X', 'X_test', 'seed', 'gpu_n_jobs_param', 'target_param', '_ml_usecase', 'fold_shuffle_param', 'exp_name_log', 'logging_param', 'memory', 'fold_groups_param', 'transform_target_param', 'X_train', 'idx'}
+2024-02-07 10:35:26,904:INFO:Checking environment
+2024-02-07 10:35:26,904:INFO:python_version: 3.10.6
+2024-02-07 10:35:26,904:INFO:python_build: ('tags/v3.10.6:9c7b4bd', 'Aug  1 2022 21:53:49')
+2024-02-07 10:35:26,904:INFO:machine: AMD64
+2024-02-07 10:35:26,905:INFO:platform: Windows-10-10.0.19045-SP0
+2024-02-07 10:35:26,910:INFO:Memory: svmem(total=16948908032, available=6532939776, percent=61.5, used=10415968256, free=6532939776)
+2024-02-07 10:35:26,910:INFO:Physical Core: 4
+2024-02-07 10:35:26,910:INFO:Logical Core: 8
+2024-02-07 10:35:26,911:INFO:Checking libraries
+2024-02-07 10:35:26,911:INFO:System:
+2024-02-07 10:35:26,911:INFO:    python: 3.10.6 (tags/v3.10.6:9c7b4bd, Aug  1 2022, 21:53:49) [MSC v.1932 64 bit (AMD64)]
+2024-02-07 10:35:26,912:INFO:executable: c:\Program Files\Python310\python.exe
+2024-02-07 10:35:26,912:INFO:   machine: Windows-10-10.0.19045-SP0
+2024-02-07 10:35:26,912:INFO:PyCaret required dependencies:
+2024-02-07 10:35:26,998:INFO:                 pip: 22.2.1
+2024-02-07 10:35:26,998:INFO:          setuptools: 63.2.0
+2024-02-07 10:35:26,998:INFO:             pycaret: 3.2.0
+2024-02-07 10:35:26,999:INFO:             IPython: 8.20.0
+2024-02-07 10:35:26,999:INFO:          ipywidgets: 8.1.1
+2024-02-07 10:35:26,999:INFO:                tqdm: 4.66.1
+2024-02-07 10:35:27,000:INFO:               numpy: 1.25.2
+2024-02-07 10:35:27,000:INFO:              pandas: 1.5.3
+2024-02-07 10:35:27,000:INFO:              jinja2: 3.1.3
+2024-02-07 10:35:27,000:INFO:               scipy: 1.10.1
+2024-02-07 10:35:27,000:INFO:              joblib: 1.3.2
+2024-02-07 10:35:27,000:INFO:             sklearn: 1.2.2
+2024-02-07 10:35:27,000:INFO:                pyod: 1.1.2
+2024-02-07 10:35:27,000:INFO:            imblearn: 0.12.0
+2024-02-07 10:35:27,000:INFO:   category_encoders: 2.6.3
+2024-02-07 10:35:27,001:INFO:            lightgbm: 4.3.0
+2024-02-07 10:35:27,001:INFO:               numba: 0.59.0
+2024-02-07 10:35:27,001:INFO:            requests: 2.31.0
+2024-02-07 10:35:27,001:INFO:          matplotlib: 3.8.2
+2024-02-07 10:35:27,001:INFO:          scikitplot: 0.3.7
+2024-02-07 10:35:27,001:INFO:         yellowbrick: 1.5
+2024-02-07 10:35:27,001:INFO:              plotly: 5.18.0
+2024-02-07 10:35:27,002:INFO:    plotly-resampler: Not installed
+2024-02-07 10:35:27,002:INFO:             kaleido: 0.2.1
+2024-02-07 10:35:27,002:INFO:           schemdraw: 0.15
+2024-02-07 10:35:27,002:INFO:         statsmodels: 0.14.1
+2024-02-07 10:35:27,002:INFO:              sktime: 0.21.1
+2024-02-07 10:35:27,002:INFO:               tbats: 1.1.3
+2024-02-07 10:35:27,002:INFO:            pmdarima: 2.0.4
+2024-02-07 10:35:27,003:INFO:              psutil: 5.9.8
+2024-02-07 10:35:27,003:INFO:          markupsafe: 2.1.4
+2024-02-07 10:35:27,003:INFO:             pickle5: Not installed
+2024-02-07 10:35:27,003:INFO:         cloudpickle: 3.0.0
+2024-02-07 10:35:27,003:INFO:         deprecation: 2.1.0
+2024-02-07 10:35:27,003:INFO:              xxhash: 3.4.1
+2024-02-07 10:35:27,004:INFO:           wurlitzer: Not installed
+2024-02-07 10:35:27,004:INFO:PyCaret optional dependencies:
+2024-02-07 10:35:27,111:INFO:                shap: Not installed
+2024-02-07 10:35:27,111:INFO:           interpret: Not installed
+2024-02-07 10:35:27,111:INFO:                umap: Not installed
+2024-02-07 10:35:27,112:INFO:     ydata_profiling: Not installed
+2024-02-07 10:35:27,112:INFO:  explainerdashboard: Not installed
+2024-02-07 10:35:27,112:INFO:             autoviz: Not installed
+2024-02-07 10:35:27,112:INFO:           fairlearn: Not installed
+2024-02-07 10:35:27,112:INFO:          deepchecks: Not installed
+2024-02-07 10:35:27,112:INFO:             xgboost: Not installed
+2024-02-07 10:35:27,112:INFO:            catboost: Not installed
+2024-02-07 10:35:27,112:INFO:              kmodes: Not installed
+2024-02-07 10:35:27,112:INFO:             mlxtend: Not installed
+2024-02-07 10:35:27,112:INFO:       statsforecast: Not installed
+2024-02-07 10:35:27,112:INFO:        tune_sklearn: Not installed
+2024-02-07 10:35:27,113:INFO:                 ray: Not installed
+2024-02-07 10:35:27,113:INFO:            hyperopt: Not installed
+2024-02-07 10:35:27,113:INFO:              optuna: Not installed
+2024-02-07 10:35:27,113:INFO:               skopt: Not installed
+2024-02-07 10:35:27,113:INFO:              mlflow: Not installed
+2024-02-07 10:35:27,113:INFO:              gradio: Not installed
+2024-02-07 10:35:27,113:INFO:             fastapi: Not installed
+2024-02-07 10:35:27,113:INFO:             uvicorn: Not installed
+2024-02-07 10:35:27,113:INFO:              m2cgen: Not installed
+2024-02-07 10:35:27,113:INFO:           evidently: Not installed
+2024-02-07 10:35:27,113:INFO:               fugue: Not installed
+2024-02-07 10:35:27,113:INFO:           streamlit: Not installed
+2024-02-07 10:35:27,113:INFO:             prophet: Not installed
+2024-02-07 10:35:27,114:INFO:None
+2024-02-07 10:35:27,114:INFO:Set up data.
+2024-02-07 10:35:27,707:INFO:Set up folding strategy.
+2024-02-07 10:35:27,707:INFO:Set up train/test split.
+2024-02-07 10:35:27,707:INFO:Set up data.
+2024-02-07 10:35:27,777:INFO:Set up index.
+2024-02-07 10:35:27,969:INFO:Assigning column types.
+2024-02-07 10:35:28,385:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-02-07 10:35:28,387:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-02-07 10:35:28,402:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-02-07 10:35:28,415:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-02-07 10:35:29,683:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-07 10:35:29,744:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-07 10:35:29,745:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:35:29,746:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:35:29,746:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-02-07 10:35:29,752:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-02-07 10:35:29,759:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-02-07 10:35:31,135:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-07 10:35:31,231:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-07 10:35:31,232:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:35:31,232:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:35:31,233:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2024-02-07 10:35:31,239:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-02-07 10:35:31,245:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-02-07 10:35:32,418:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-07 10:35:32,506:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-07 10:35:32,506:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:35:32,507:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:35:32,514:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-02-07 10:35:32,520:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-02-07 10:35:33,531:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-07 10:35:33,621:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-07 10:35:33,622:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:35:33,622:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:35:33,622:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2024-02-07 10:35:33,637:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-02-07 10:35:34,787:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-07 10:35:34,868:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-07 10:35:34,869:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:35:34,869:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:35:34,882:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-02-07 10:35:36,179:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-07 10:35:36,324:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-07 10:35:36,326:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:35:36,327:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:35:36,328:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2024-02-07 10:35:37,401:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-07 10:35:37,468:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-07 10:35:37,469:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:35:37,470:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:35:38,789:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-07 10:35:38,977:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-07 10:35:38,980:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:35:38,981:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:35:38,982:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-02-07 10:35:40,333:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-07 10:35:40,431:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:35:40,432:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:35:41,579:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-07 10:35:41,657:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:35:41,657:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:35:41,657:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2024-02-07 10:35:42,720:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:35:42,720:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:35:44,050:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:35:44,051:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:35:44,066:INFO:Preparing preprocessing pipeline...
+2024-02-07 10:35:44,066:INFO:Set up date feature engineering.
+2024-02-07 10:35:44,066:INFO:Set up simple imputation.
+2024-02-07 10:35:45,482:INFO:Set up encoding of ordinal features.
+2024-02-07 10:35:45,661:INFO:Set up encoding of categorical features.
+2024-02-07 10:35:45,678:INFO:Set up column transformation.
+2024-02-07 10:35:45,680:INFO:Set up feature normalization.
+2024-02-07 10:36:06,847:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py:246: UserWarning: Persisting input arguments took 1.99s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2024-02-07 10:36:15,309:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py:253: UserWarning: Persisting input arguments took 2.05s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2024-02-07 10:36:46,622:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py:246: UserWarning: Persisting input arguments took 1.87s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2024-02-07 10:37:22,506:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py:253: UserWarning: Persisting input arguments took 2.04s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2024-02-07 10:37:30,271:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py:246: UserWarning: Persisting input arguments took 1.33s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2024-02-07 10:37:55,011:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py:253: UserWarning: Persisting input arguments took 3.06s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2024-02-07 10:45:06,763:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py:246: UserWarning: Persisting input arguments took 1.09s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2024-02-07 10:45:31,662:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py:253: UserWarning: Persisting input arguments took 1.04s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2024-02-07 10:45:36,963:INFO:Finished creating preprocessing pipeline.
+2024-02-07 10:45:37,041:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\Public\Documents\ESTsoft\CreatorTemp\joblib),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['date'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['id', 'onpromotion', 'dcoilwtico',
+                                             'wage', 'earthquake'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imput...
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['store_nbr', 'family'],
+                                    transformer=TargetEncoder(cols=['store_nbr',
+                                                                    'family'],
+                                                              handle_missing='return_nan'))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize',
+                 TransformerWrapper(transformer=StandardScaler()))])
+2024-02-07 10:45:37,042:INFO:Creating final display dataframe.
+2024-02-07 10:45:47,732:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py:110: UserWarning: Persisting input arguments took 1.65s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = pipeline._memory_transform(transformer, X, y)
+
+2024-02-07 10:46:25,900:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py:110: UserWarning: Persisting input arguments took 3.79s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = pipeline._memory_transform(transformer, X, y)
+
+2024-02-07 10:46:52,175:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py:110: UserWarning: Persisting input arguments took 1.63s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = pipeline._memory_transform(transformer, X, y)
+
+2024-02-07 10:47:17,083:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py:286: UserWarning: Persisting input arguments took 7.20s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_full_transform(
+
+2024-02-07 10:47:26,144:INFO:Setup _display_container:                     Description             Value
+0                    Session id                 1
+1                        Target             sales
+2                   Target type        Regression
+3           Original data shape     (3081078, 16)
+4        Transformed data shape    (3081078, 101)
+5   Transformed train set shape    (3052566, 101)
+6    Transformed test set shape      (28512, 101)
+7              Ordinal features                 1
+8              Numeric features                 5
+9                 Date features                 1
+10         Categorical features                 9
+11                   Preprocess              True
+12              Imputation type            simple
+13           Numeric imputation              mean
+14       Categorical imputation              mode
+15     Maximum one-hot encoding                25
+16              Encoding method              None
+17               Transformation              True
+18        Transformation method       yeo-johnson
+19                    Normalize              True
+20             Normalize method            zscore
+21               Fold Generator   StratifiedKFold
+22                  Fold Number                10
+23                     CPU Jobs                -1
+24                      Use GPU             False
+25               Log Experiment             False
+26              Experiment Name  reg-default-name
+27                          USI              d454
+2024-02-07 10:47:27,888:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:47:27,891:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:47:29,316:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:47:29,316:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:47:29,336:INFO:setup() successfully completed in 722.44s...............
+2024-02-07 10:48:58,549:INFO:gpu_param set to False
+2024-02-07 10:48:59,724:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:48:59,726:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:49:00,855:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:49:00,858:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 10:52:30,079:INFO:Initializing compare_models()
+2024-02-07 10:52:30,079:INFO:compare_models(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000024A6B679780>, include=['lr', 'lasso', 'ridge', 'en', 'lar', 'llar', 'omp', 'br', 'par', 'ransac', 'tr', 'huber', 'kr', 'svm', 'knn', 'dt', 'rf', 'et', 'ada', 'gbr', 'mlp', 'lightgbm', 'dummy'], fold=None, round=4, cross_validation=True, sort=MAE, n_select=25, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.regression.oop.RegressionExperiment object at 0x0000024A6B679780>, 'include': ['lr', 'lasso', 'ridge', 'en', 'lar', 'llar', 'omp', 'br', 'par', 'ransac', 'tr', 'huber', 'kr', 'svm', 'knn', 'dt', 'rf', 'et', 'ada', 'gbr', 'mlp', 'lightgbm', 'dummy'], 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'MAE', 'n_select': 25, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.regression.oop.RegressionExperiment'>}, exclude=None)
+2024-02-07 10:52:30,079:INFO:Checking exceptions
+2024-02-07 10:52:30,469:INFO:Preparing display monitor
+2024-02-07 10:52:30,694:INFO:Initializing Linear Regression
+2024-02-07 10:52:30,694:INFO:Total runtime is 1.2501080830891926e-05 minutes
+2024-02-07 10:52:30,701:INFO:SubProcess create_model() called ==================================
+2024-02-07 10:52:30,706:INFO:Initializing create_model()
+2024-02-07 10:52:30,706:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000024A6B679780>, estimator=lr, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000024A6B67B6A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-07 10:52:30,706:INFO:Checking exceptions
+2024-02-07 10:52:30,707:INFO:Importing libraries
+2024-02-07 10:52:30,707:INFO:Copying training dataset
+2024-02-07 10:52:31,872:INFO:Defining folds
+2024-02-07 10:52:31,872:INFO:Declaring metric variables
+2024-02-07 10:52:31,877:INFO:Importing untrained model
+2024-02-07 10:52:31,883:INFO:Linear Regression Imported successfully
+2024-02-07 10:52:31,895:INFO:Starting cross validation
+2024-02-07 10:52:31,943:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-07 10:52:32,639:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_split.py:700: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=10.
+  warnings.warn(
+
+2024-02-07 11:04:19,091:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-07 11:04:19,093:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-07 11:04:19,093:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-07 11:04:19,093:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-07 11:04:19,486:INFO:PyCaret RegressionExperiment
+2024-02-07 11:04:19,486:INFO:Logging name: reg-default-name
+2024-02-07 11:04:19,486:INFO:ML Usecase: MLUsecase.REGRESSION
+2024-02-07 11:04:19,486:INFO:version 3.2.0
+2024-02-07 11:04:19,486:INFO:Initializing setup()
+2024-02-07 11:04:19,486:INFO:self.USI: 769e
+2024-02-07 11:04:19,486:INFO:self._variable_keys: {'fold_groups_param', 'X_test', 'seed', 'target_param', 'transform_target_param', '_ml_usecase', 'USI', 'fold_generator', 'fold_shuffle_param', 'gpu_n_jobs_param', 'gpu_param', 'y_train', 'pipeline', 'exp_id', 'X_train', 'log_plots_param', 'exp_name_log', 'data', 'y', 'n_jobs_param', 'html_param', 'y_test', 'memory', '_available_plots', 'X', 'idx', 'logging_param'}
+2024-02-07 11:04:19,486:INFO:Checking environment
+2024-02-07 11:04:19,487:INFO:python_version: 3.10.6
+2024-02-07 11:04:19,487:INFO:python_build: ('tags/v3.10.6:9c7b4bd', 'Aug  1 2022 21:53:49')
+2024-02-07 11:04:19,487:INFO:machine: AMD64
+2024-02-07 11:04:19,487:INFO:platform: Windows-10-10.0.19045-SP0
+2024-02-07 11:04:19,491:INFO:Memory: svmem(total=16948908032, available=8633802752, percent=49.1, used=8315105280, free=8633802752)
+2024-02-07 11:04:19,492:INFO:Physical Core: 4
+2024-02-07 11:04:19,492:INFO:Logical Core: 8
+2024-02-07 11:04:19,492:INFO:Checking libraries
+2024-02-07 11:04:19,492:INFO:System:
+2024-02-07 11:04:19,492:INFO:    python: 3.10.6 (tags/v3.10.6:9c7b4bd, Aug  1 2022, 21:53:49) [MSC v.1932 64 bit (AMD64)]
+2024-02-07 11:04:19,492:INFO:executable: c:\Program Files\Python310\python.exe
+2024-02-07 11:04:19,492:INFO:   machine: Windows-10-10.0.19045-SP0
+2024-02-07 11:04:19,493:INFO:PyCaret required dependencies:
+2024-02-07 11:04:19,542:INFO:                 pip: 22.2.1
+2024-02-07 11:04:19,542:INFO:          setuptools: 63.2.0
+2024-02-07 11:04:19,543:INFO:             pycaret: 3.2.0
+2024-02-07 11:04:19,543:INFO:             IPython: 8.20.0
+2024-02-07 11:04:19,543:INFO:          ipywidgets: 8.1.1
+2024-02-07 11:04:19,543:INFO:                tqdm: 4.66.1
+2024-02-07 11:04:19,543:INFO:               numpy: 1.25.2
+2024-02-07 11:04:19,543:INFO:              pandas: 1.5.3
+2024-02-07 11:04:19,543:INFO:              jinja2: 3.1.3
+2024-02-07 11:04:19,543:INFO:               scipy: 1.10.1
+2024-02-07 11:04:19,543:INFO:              joblib: 1.3.2
+2024-02-07 11:04:19,543:INFO:             sklearn: 1.2.2
+2024-02-07 11:04:19,543:INFO:                pyod: 1.1.2
+2024-02-07 11:04:19,543:INFO:            imblearn: 0.12.0
+2024-02-07 11:04:19,543:INFO:   category_encoders: 2.6.3
+2024-02-07 11:04:19,543:INFO:            lightgbm: 4.3.0
+2024-02-07 11:04:19,543:INFO:               numba: 0.59.0
+2024-02-07 11:04:19,543:INFO:            requests: 2.31.0
+2024-02-07 11:04:19,543:INFO:          matplotlib: 3.8.2
+2024-02-07 11:04:19,544:INFO:          scikitplot: 0.3.7
+2024-02-07 11:04:19,544:INFO:         yellowbrick: 1.5
+2024-02-07 11:04:19,544:INFO:              plotly: 5.18.0
+2024-02-07 11:04:19,544:INFO:    plotly-resampler: Not installed
+2024-02-07 11:04:19,545:INFO:             kaleido: 0.2.1
+2024-02-07 11:04:19,545:INFO:           schemdraw: 0.15
+2024-02-07 11:04:19,545:INFO:         statsmodels: 0.14.1
+2024-02-07 11:04:19,545:INFO:              sktime: 0.21.1
+2024-02-07 11:04:19,545:INFO:               tbats: 1.1.3
+2024-02-07 11:04:19,545:INFO:            pmdarima: 2.0.4
+2024-02-07 11:04:19,545:INFO:              psutil: 5.9.8
+2024-02-07 11:04:19,545:INFO:          markupsafe: 2.1.4
+2024-02-07 11:04:19,545:INFO:             pickle5: Not installed
+2024-02-07 11:04:19,545:INFO:         cloudpickle: 3.0.0
+2024-02-07 11:04:19,545:INFO:         deprecation: 2.1.0
+2024-02-07 11:04:19,545:INFO:              xxhash: 3.4.1
+2024-02-07 11:04:19,545:INFO:           wurlitzer: Not installed
+2024-02-07 11:04:19,545:INFO:PyCaret optional dependencies:
+2024-02-07 11:04:19,594:INFO:                shap: Not installed
+2024-02-07 11:04:19,594:INFO:           interpret: Not installed
+2024-02-07 11:04:19,594:INFO:                umap: Not installed
+2024-02-07 11:04:19,594:INFO:     ydata_profiling: Not installed
+2024-02-07 11:04:19,594:INFO:  explainerdashboard: Not installed
+2024-02-07 11:04:19,594:INFO:             autoviz: Not installed
+2024-02-07 11:04:19,594:INFO:           fairlearn: Not installed
+2024-02-07 11:04:19,594:INFO:          deepchecks: Not installed
+2024-02-07 11:04:19,595:INFO:             xgboost: Not installed
+2024-02-07 11:04:19,595:INFO:            catboost: Not installed
+2024-02-07 11:04:19,595:INFO:              kmodes: Not installed
+2024-02-07 11:04:19,595:INFO:             mlxtend: Not installed
+2024-02-07 11:04:19,595:INFO:       statsforecast: Not installed
+2024-02-07 11:04:19,595:INFO:        tune_sklearn: Not installed
+2024-02-07 11:04:19,595:INFO:                 ray: Not installed
+2024-02-07 11:04:19,595:INFO:            hyperopt: Not installed
+2024-02-07 11:04:19,595:INFO:              optuna: Not installed
+2024-02-07 11:04:19,595:INFO:               skopt: Not installed
+2024-02-07 11:04:19,595:INFO:              mlflow: Not installed
+2024-02-07 11:04:19,595:INFO:              gradio: Not installed
+2024-02-07 11:04:19,595:INFO:             fastapi: Not installed
+2024-02-07 11:04:19,595:INFO:             uvicorn: Not installed
+2024-02-07 11:04:19,595:INFO:              m2cgen: Not installed
+2024-02-07 11:04:19,595:INFO:           evidently: Not installed
+2024-02-07 11:04:19,595:INFO:               fugue: Not installed
+2024-02-07 11:04:19,595:INFO:           streamlit: Not installed
+2024-02-07 11:04:19,596:INFO:             prophet: Not installed
+2024-02-07 11:04:19,596:INFO:None
+2024-02-07 11:04:19,596:INFO:Set up data.
+2024-02-07 11:04:19,996:INFO:Set up folding strategy.
+2024-02-07 11:04:19,996:INFO:Set up train/test split.
+2024-02-07 11:04:19,996:INFO:Set up data.
+2024-02-07 11:04:20,033:INFO:Set up index.
+2024-02-07 11:04:20,131:INFO:Assigning column types.
+2024-02-07 11:04:20,365:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-02-07 11:04:20,365:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-02-07 11:04:20,370:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-02-07 11:04:20,376:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-02-07 11:04:21,140:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-07 11:04:21,185:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-07 11:04:21,186:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:04:21,187:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:04:21,187:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-02-07 11:04:21,192:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-02-07 11:04:21,196:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-02-07 11:04:21,944:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-07 11:04:21,988:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-07 11:04:21,989:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:04:21,989:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:04:21,990:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2024-02-07 11:04:21,995:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-02-07 11:04:22,000:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-02-07 11:04:22,716:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-07 11:04:22,768:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-07 11:04:22,769:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:04:22,769:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:04:22,775:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-02-07 11:04:22,781:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-02-07 11:04:23,532:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-07 11:04:23,579:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-07 11:04:23,580:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:04:23,580:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:04:23,581:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2024-02-07 11:04:23,590:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-02-07 11:04:24,318:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-07 11:04:24,364:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-07 11:04:24,365:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:04:24,365:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:04:24,374:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-02-07 11:04:25,098:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-07 11:04:25,143:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-07 11:04:25,143:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:04:25,143:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:04:25,144:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2024-02-07 11:04:25,886:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-07 11:04:25,930:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-07 11:04:25,931:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:04:25,931:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:04:26,810:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-07 11:04:26,864:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-07 11:04:26,866:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:04:26,867:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:04:26,867:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-02-07 11:04:27,627:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-07 11:04:27,675:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:04:27,675:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:04:28,415:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-07 11:04:28,464:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:04:28,465:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:04:28,465:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2024-02-07 11:04:29,287:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:04:29,288:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:04:30,181:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:04:30,182:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:04:30,184:INFO:Preparing preprocessing pipeline...
+2024-02-07 11:04:30,184:INFO:Set up date feature engineering.
+2024-02-07 11:04:30,184:INFO:Set up simple imputation.
+2024-02-07 11:04:30,785:INFO:Set up encoding of ordinal features.
+2024-02-07 11:04:30,865:INFO:Set up encoding of categorical features.
+2024-02-07 11:04:30,875:INFO:Set up column transformation.
+2024-02-07 11:04:30,875:INFO:Set up feature normalization.
+2024-02-07 11:04:44,978:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py:246: UserWarning: Persisting input arguments took 1.71s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2024-02-07 11:04:51,589:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py:253: UserWarning: Persisting input arguments took 1.75s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2024-02-07 11:05:10,267:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py:246: UserWarning: Persisting input arguments took 1.51s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2024-02-07 11:05:32,350:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py:253: UserWarning: Persisting input arguments took 1.44s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2024-02-07 11:05:38,202:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py:246: UserWarning: Persisting input arguments took 1.00s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2024-02-07 11:06:01,397:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py:253: UserWarning: Persisting input arguments took 1.73s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2024-02-07 11:06:05,663:INFO:Finished creating preprocessing pipeline.
+2024-02-07 11:06:05,789:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\Public\Documents\ESTsoft\CreatorTemp\joblib),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['date'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['id', 'onpromotion', 'dcoilwtico',
+                                             'wage', 'earthquake'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imput...
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['store_nbr', 'family'],
+                                    transformer=TargetEncoder(cols=['store_nbr',
+                                                                    'family'],
+                                                              handle_missing='return_nan'))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize',
+                 TransformerWrapper(transformer=StandardScaler()))])
+2024-02-07 11:06:05,791:INFO:Creating final display dataframe.
+2024-02-07 11:06:14,217:INFO:Setup _display_container:                     Description             Value
+0                    Session id                 1
+1                        Target             sales
+2                   Target type        Regression
+3           Original data shape     (3081078, 16)
+4        Transformed data shape    (3081078, 101)
+5   Transformed train set shape    (3052566, 101)
+6    Transformed test set shape      (28512, 101)
+7              Ordinal features                 1
+8              Numeric features                 5
+9                 Date features                 1
+10         Categorical features                 9
+11                   Preprocess              True
+12              Imputation type            simple
+13           Numeric imputation              mean
+14       Categorical imputation              mode
+15     Maximum one-hot encoding                25
+16              Encoding method              None
+17               Transformation              True
+18        Transformation method       yeo-johnson
+19                    Normalize              True
+20             Normalize method            zscore
+21               Fold Generator   StratifiedKFold
+22                  Fold Number                10
+23                     CPU Jobs                -1
+24                      Use GPU             False
+25               Log Experiment             False
+26              Experiment Name  reg-default-name
+27                          USI              769e
+2024-02-07 11:06:15,323:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:06:15,326:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:06:16,120:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:06:16,120:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:06:16,128:INFO:setup() successfully completed in 116.76s...............
+2024-02-07 11:06:16,184:INFO:gpu_param set to False
+2024-02-07 11:06:17,016:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:06:17,016:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:06:17,927:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:06:17,927:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-07 11:06:34,926:INFO:Initializing compare_models()
+2024-02-07 11:06:34,926:INFO:compare_models(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EB26C1EAD0>, include=['lr', 'lightgbm', 'rf'], fold=None, round=4, cross_validation=True, sort=F1, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.regression.oop.RegressionExperiment object at 0x000001EB26C1EAD0>, 'include': ['lr', 'lightgbm', 'rf'], 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'F1', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.regression.oop.RegressionExperiment'>}, exclude=None)
+2024-02-07 11:06:34,928:INFO:Checking exceptions
+2024-02-07 11:07:01,375:INFO:Initializing compare_models()
+2024-02-07 11:07:01,375:INFO:compare_models(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EB26C1EAD0>, include=['lr', 'lightgbm', 'rf'], fold=None, round=4, cross_validation=True, sort=MAE, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.regression.oop.RegressionExperiment object at 0x000001EB26C1EAD0>, 'include': ['lr', 'lightgbm', 'rf'], 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'MAE', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.regression.oop.RegressionExperiment'>}, exclude=None)
+2024-02-07 11:07:01,375:INFO:Checking exceptions
+2024-02-07 11:07:01,826:INFO:Preparing display monitor
+2024-02-07 11:07:02,009:INFO:Initializing Linear Regression
+2024-02-07 11:07:02,009:INFO:Total runtime is 0.0 minutes
+2024-02-07 11:07:02,015:INFO:SubProcess create_model() called ==================================
+2024-02-07 11:07:02,015:INFO:Initializing create_model()
+2024-02-07 11:07:02,015:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EB26C1EAD0>, estimator=lr, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EB29C65AB0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-07 11:07:02,015:INFO:Checking exceptions
+2024-02-07 11:07:02,016:INFO:Importing libraries
+2024-02-07 11:07:02,016:INFO:Copying training dataset
+2024-02-07 11:07:03,205:INFO:Defining folds
+2024-02-07 11:07:03,205:INFO:Declaring metric variables
+2024-02-07 11:07:03,212:INFO:Importing untrained model
+2024-02-07 11:07:03,219:INFO:Linear Regression Imported successfully
+2024-02-07 11:07:03,229:INFO:Starting cross validation
+2024-02-07 11:07:03,249:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-07 11:07:03,891:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_split.py:700: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=10.
+  warnings.warn(
+
+2024-02-07 11:12:53,687:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-07 11:12:56,380:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\numpy\core\_methods.py:187: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(x, axis, dtype, out, keepdims=keepdims, where=where)
+
+2024-02-07 11:25:55,937:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_validation.py:378: FitFailedWarning: 
+7 fits failed out of a total of 10.
+The score on these train-test partitions for these parameters will be set to 0.0.
+If these failures are not expected, you can try to debug them by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+1 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 270, in fit
+    X, y, _ = self._fit(X, y, **fit_params_steps)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 253, in _fit
+    X, y = self._memory_transform(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\memory.py", line 353, in __call__
+    return self.func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 79, in _transform_one
+    output = transformer.transform(*args)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\preprocess\transformers.py", line 255, in transform
+    output = self.transformer.transform(*args)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\utils.py", line 488, in transform
+    X = self._transform(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 195, in _transform
+    X = self.get_dummies(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 274, in get_dummies
+    X = X.reindex(columns=cols)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\util\_decorators.py", line 347, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\frame.py", line 5205, in reindex
+    return super().reindex(**kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\generic.py", line 5273, in reindex
+    self._consolidate_inplace()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\generic.py", line 5980, in _consolidate_inplace
+    self._protect_consolidate(f)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\generic.py", line 5968, in _protect_consolidate
+    result = f()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\generic.py", line 5978, in f
+    self._mgr = self._mgr.consolidate()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\managers.py", line 686, in consolidate
+    bm._consolidate_inplace()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\managers.py", line 1871, in _consolidate_inplace
+    self.blocks = _consolidate(self.blocks)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\managers.py", line 2329, in _consolidate
+    merged_blocks, _ = _merge_blocks(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\managers.py", line 2388, in _merge_blocks
+    new_values = new_values[argsort]
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 1.94 GiB for an array with shape (95, 2747309) and data type float64
+
+--------------------------------------------------------------------------------
+1 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 270, in fit
+    X, y, _ = self._fit(X, y, **fit_params_steps)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 246, in _fit
+    fitted_transformer = self._memory_fit(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\memory.py", line 353, in __call__
+    return self.func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 68, in _fit_one
+    transformer.fit(*args, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\preprocess\transformers.py", line 229, in fit
+    self.transformer.fit(*args, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\utils.py", line 315, in fit
+    X_transformed = self.transform(X, override_return_df=True)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\utils.py", line 488, in transform
+    X = self._transform(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 195, in _transform
+    X = self.get_dummies(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 269, in get_dummies
+    X = pd.concat([base_df, X], axis=1)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\reshape\concat.py", line 381, in concat
+    return op.get_result()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\reshape\concat.py", line 616, in get_result
+    new_data = concatenate_managers(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\concat.py", line 212, in concatenate_managers
+    values = values.copy()
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 461. MiB for an array with shape (22, 2747309) and data type float64
+
+--------------------------------------------------------------------------------
+1 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 270, in fit
+    X, y, _ = self._fit(X, y, **fit_params_steps)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 253, in _fit
+    X, y = self._memory_transform(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\memory.py", line 353, in __call__
+    return self.func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 79, in _transform_one
+    output = transformer.transform(*args)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\preprocess\transformers.py", line 255, in transform
+    output = self.transformer.transform(*args)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\utils.py", line 488, in transform
+    X = self._transform(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 195, in _transform
+    X = self.get_dummies(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 269, in get_dummies
+    X = pd.concat([base_df, X], axis=1)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\reshape\concat.py", line 381, in concat
+    return op.get_result()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\reshape\concat.py", line 616, in get_result
+    new_data = concatenate_managers(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\concat.py", line 212, in concatenate_managers
+    values = values.copy()
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 335. MiB for an array with shape (16, 2747309) and data type float64
+
+--------------------------------------------------------------------------------
+1 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 270, in fit
+    X, y, _ = self._fit(X, y, **fit_params_steps)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 253, in _fit
+    X, y = self._memory_transform(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\memory.py", line 353, in __call__
+    return self.func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 79, in _transform_one
+    output = transformer.transform(*args)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\preprocess\transformers.py", line 255, in transform
+    output = self.transformer.transform(*args)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\utils.py", line 488, in transform
+    X = self._transform(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 195, in _transform
+    X = self.get_dummies(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 269, in get_dummies
+    X = pd.concat([base_df, X], axis=1)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\reshape\concat.py", line 381, in concat
+    return op.get_result()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\reshape\concat.py", line 616, in get_result
+    new_data = concatenate_managers(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\concat.py", line 212, in concatenate_managers
+    values = values.copy()
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 461. MiB for an array with shape (22, 2747309) and data type float64
+
+--------------------------------------------------------------------------------
+1 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 270, in fit
+    X, y, _ = self._fit(X, y, **fit_params_steps)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 246, in _fit
+    fitted_transformer = self._memory_fit(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\memory.py", line 353, in __call__
+    return self.func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 68, in _fit_one
+    transformer.fit(*args, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\preprocess\transformers.py", line 229, in fit
+    self.transformer.fit(*args, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\utils.py", line 315, in fit
+    X_transformed = self.transform(X, override_return_df=True)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\utils.py", line 488, in transform
+    X = self._transform(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 195, in _transform
+    X = self.get_dummies(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 269, in get_dummies
+    X = pd.concat([base_df, X], axis=1)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\reshape\concat.py", line 381, in concat
+    return op.get_result()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\reshape\concat.py", line 616, in get_result
+    new_data = concatenate_managers(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\concat.py", line 212, in concatenate_managers
+    values = values.copy()
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 461. MiB for an array with shape (22, 2747310) and data type float64
+
+--------------------------------------------------------------------------------
+1 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 270, in fit
+    X, y, _ = self._fit(X, y, **fit_params_steps)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 253, in _fit
+    X, y = self._memory_transform(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\memory.py", line 353, in __call__
+    return self.func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 79, in _transform_one
+    output = transformer.transform(*args)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\preprocess\transformers.py", line 263, in transform
+    new_X = self._prepare_df(X, output)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\preprocess\transformers.py", line 196, in _prepare_df
+    return self._reorder_cols(out, X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\preprocess\transformers.py", line 169, in _reorder_cols
+    new_df = df.merge(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\frame.py", line 10093, in merge
+    return merge(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\reshape\merge.py", line 124, in merge
+    return op.get_result(copy=copy)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\reshape\merge.py", line 775, in get_result
+    result = self._reindex_and_concat(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\reshape\merge.py", line 766, in _reindex_and_concat
+    result = concat([left, right], axis=1, copy=copy)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\reshape\concat.py", line 381, in concat
+    return op.get_result()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\reshape\concat.py", line 616, in get_result
+    new_data = concatenate_managers(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\concat.py", line 212, in concatenate_managers
+    values = values.copy()
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 105. MiB for an array with shape (5, 2747310) and data type float64
+
+--------------------------------------------------------------------------------
+1 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 270, in fit
+    X, y, _ = self._fit(X, y, **fit_params_steps)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 246, in _fit
+    fitted_transformer = self._memory_fit(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\memory.py", line 353, in __call__
+    return self.func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 68, in _fit_one
+    transformer.fit(*args, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\preprocess\transformers.py", line 229, in fit
+    self.transformer.fit(*args, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\utils.py", line 315, in fit
+    X_transformed = self.transform(X, override_return_df=True)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\utils.py", line 488, in transform
+    X = self._transform(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 195, in _transform
+    X = self.get_dummies(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 269, in get_dummies
+    X = pd.concat([base_df, X], axis=1)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\reshape\concat.py", line 381, in concat
+    return op.get_result()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\reshape\concat.py", line 616, in get_result
+    new_data = concatenate_managers(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\concat.py", line 212, in concatenate_managers
+    values = values.copy()
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 356. MiB for an array with shape (17, 2747310) and data type float64
+
+  warnings.warn(some_fits_failed_message, FitFailedWarning)
+
+2024-02-07 11:25:56,004:INFO:Calculating mean and std
+2024-02-07 11:25:56,110:INFO:Creating metrics dataframe
+2024-02-07 11:25:56,252:INFO:Uploading results into container
+2024-02-07 11:25:56,259:INFO:Uploading model into container now
+2024-02-07 11:25:56,268:INFO:_master_model_container: 1
+2024-02-07 11:25:56,269:INFO:_display_container: 2
+2024-02-07 11:25:56,277:INFO:LinearRegression(n_jobs=-1)
+2024-02-07 11:25:56,278:INFO:create_model() successfully completed......................................
+2024-02-07 11:25:58,013:WARNING:create_model() for LinearRegression(n_jobs=-1) raised an exception or returned all 0.0, trying without fit_kwargs:
+2024-02-07 11:25:58,016:WARNING:Traceback (most recent call last):
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    assert (
+AssertionError
+
+2024-02-07 11:25:58,016:INFO:Initializing create_model()
+2024-02-07 11:25:58,017:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EB26C1EAD0>, estimator=lr, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EB29C65AB0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-07 11:25:58,017:INFO:Checking exceptions
+2024-02-07 11:25:58,017:INFO:Importing libraries
+2024-02-07 11:25:58,019:INFO:Copying training dataset
+2024-02-07 11:25:59,963:INFO:Defining folds
+2024-02-07 11:25:59,964:INFO:Declaring metric variables
+2024-02-07 11:25:59,974:INFO:Importing untrained model
+2024-02-07 11:25:59,979:INFO:Linear Regression Imported successfully
+2024-02-07 11:25:59,990:INFO:Starting cross validation
+2024-02-07 11:25:59,996:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-07 11:26:00,576:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_split.py:700: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=10.
+  warnings.warn(
+
+2024-02-07 11:32:02,486:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-07 11:32:09,105:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\numpy\core\_methods.py:187: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(x, axis, dtype, out, keepdims=keepdims, where=where)
+
+2024-02-07 11:46:07,359:INFO:Initializing create_model()
+2024-02-07 11:46:07,362:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EB26C1EAD0>, estimator=rf, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-07 11:46:07,362:INFO:Checking exceptions
+2024-02-07 11:46:07,490:INFO:Importing libraries
+2024-02-07 11:46:07,493:INFO:Copying training dataset
+2024-02-07 11:46:09,214:INFO:Defining folds
+2024-02-07 11:46:09,215:INFO:Declaring metric variables
+2024-02-07 11:46:09,222:INFO:Importing untrained model
+2024-02-07 11:46:09,230:INFO:Random Forest Regressor Imported successfully
+2024-02-07 11:46:09,240:INFO:Starting cross validation
+2024-02-07 11:46:09,254:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-07 11:46:09,840:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_split.py:700: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=10.
+  warnings.warn(
+
+2024-02-07 11:50:34,453:INFO:Initializing compare_models()
+2024-02-07 11:50:34,455:INFO:compare_models(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EB26C1EAD0>, include=['lightgbm', 'rf'], fold=None, round=4, cross_validation=True, sort=MAE, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.regression.oop.RegressionExperiment object at 0x000001EB26C1EAD0>, 'include': ['lightgbm', 'rf'], 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'MAE', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.regression.oop.RegressionExperiment'>}, exclude=None)
+2024-02-07 11:50:34,455:INFO:Checking exceptions
+2024-02-07 11:50:35,392:INFO:Preparing display monitor
+2024-02-07 11:50:35,482:INFO:Initializing Light Gradient Boosting Machine
+2024-02-07 11:50:35,482:INFO:Total runtime is 0.0 minutes
+2024-02-07 11:50:35,488:INFO:SubProcess create_model() called ==================================
+2024-02-07 11:50:35,490:INFO:Initializing create_model()
+2024-02-07 11:50:35,492:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EB26C1EAD0>, estimator=lightgbm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EB2A526EC0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-07 11:50:35,493:INFO:Checking exceptions
+2024-02-07 11:50:35,493:INFO:Importing libraries
+2024-02-07 11:50:35,493:INFO:Copying training dataset
+2024-02-07 11:50:36,565:INFO:Defining folds
+2024-02-07 11:50:36,565:INFO:Declaring metric variables
+2024-02-07 11:50:36,573:INFO:Importing untrained model
+2024-02-07 11:50:36,582:INFO:Light Gradient Boosting Machine Imported successfully
+2024-02-07 11:50:36,596:INFO:Starting cross validation
+2024-02-07 11:50:36,605:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-07 11:50:37,150:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_split.py:700: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=10.
+  warnings.warn(
+
+2024-02-07 11:55:42,216:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-07 11:55:48,234:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\numpy\core\_methods.py:187: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(x, axis, dtype, out, keepdims=keepdims, where=where)
+
+2024-02-07 12:06:36,716:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_validation.py:378: FitFailedWarning: 
+7 fits failed out of a total of 10.
+The score on these train-test partitions for these parameters will be set to 0.0.
+If these failures are not expected, you can try to debug them by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+1 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 270, in fit
+    X, y, _ = self._fit(X, y, **fit_params_steps)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 253, in _fit
+    X, y = self._memory_transform(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\memory.py", line 353, in __call__
+    return self.func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 79, in _transform_one
+    output = transformer.transform(*args)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\preprocess\transformers.py", line 263, in transform
+    new_X = self._prepare_df(X, output)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\preprocess\transformers.py", line 196, in _prepare_df
+    return self._reorder_cols(out, X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\preprocess\transformers.py", line 176, in _reorder_cols
+    new_df = new_df.drop(new_df.filter(regex="__drop__$").columns, axis=1)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\generic.py", line 5470, in filter
+    return self.loc(axis=axis)[values]
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\indexing.py", line 1073, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\indexing.py", line 1292, in _getitem_axis
+    return self._getbool_axis(key, axis=axis)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\indexing.py", line 1093, in _getbool_axis
+    return self.obj._take_with_is_copy(inds, axis=axis)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\generic.py", line 3902, in _take_with_is_copy
+    result = self._take(indices=indices, axis=axis)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\generic.py", line 3884, in _take
+    self._consolidate_inplace()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\generic.py", line 5980, in _consolidate_inplace
+    self._protect_consolidate(f)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\generic.py", line 5968, in _protect_consolidate
+    result = f()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\generic.py", line 5978, in f
+    self._mgr = self._mgr.consolidate()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\managers.py", line 686, in consolidate
+    bm._consolidate_inplace()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\managers.py", line 1871, in _consolidate_inplace
+    self.blocks = _consolidate(self.blocks)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\managers.py", line 2329, in _consolidate
+    merged_blocks, _ = _merge_blocks(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\managers.py", line 2388, in _merge_blocks
+    new_values = new_values[argsort]
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 1.94 GiB for an array with shape (95, 2747309) and data type float64
+
+--------------------------------------------------------------------------------
+1 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 270, in fit
+    X, y, _ = self._fit(X, y, **fit_params_steps)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 246, in _fit
+    fitted_transformer = self._memory_fit(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\memory.py", line 353, in __call__
+    return self.func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 68, in _fit_one
+    transformer.fit(*args, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\preprocess\transformers.py", line 229, in fit
+    self.transformer.fit(*args, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\utils.py", line 315, in fit
+    X_transformed = self.transform(X, override_return_df=True)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\utils.py", line 488, in transform
+    X = self._transform(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 195, in _transform
+    X = self.get_dummies(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 274, in get_dummies
+    X = X.reindex(columns=cols)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\util\_decorators.py", line 347, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\frame.py", line 5205, in reindex
+    return super().reindex(**kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\generic.py", line 5273, in reindex
+    self._consolidate_inplace()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\generic.py", line 5980, in _consolidate_inplace
+    self._protect_consolidate(f)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\generic.py", line 5968, in _protect_consolidate
+    result = f()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\generic.py", line 5978, in f
+    self._mgr = self._mgr.consolidate()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\managers.py", line 686, in consolidate
+    bm._consolidate_inplace()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\managers.py", line 1871, in _consolidate_inplace
+    self.blocks = _consolidate(self.blocks)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\managers.py", line 2329, in _consolidate
+    merged_blocks, _ = _merge_blocks(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\managers.py", line 2381, in _merge_blocks
+    new_values = np.vstack([b.values for b in blocks])  # type: ignore[misc]
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\numpy\core\shape_base.py", line 289, in vstack
+    return _nx.concatenate(arrs, 0, dtype=dtype, casting=casting)
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 1.94 GiB for an array with shape (95, 2747309) and data type float64
+
+--------------------------------------------------------------------------------
+1 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 270, in fit
+    X, y, _ = self._fit(X, y, **fit_params_steps)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 253, in _fit
+    X, y = self._memory_transform(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\memory.py", line 353, in __call__
+    return self.func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 79, in _transform_one
+    output = transformer.transform(*args)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\preprocess\transformers.py", line 255, in transform
+    output = self.transformer.transform(*args)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\utils.py", line 488, in transform
+    X = self._transform(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 195, in _transform
+    X = self.get_dummies(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 269, in get_dummies
+    X = pd.concat([base_df, X], axis=1)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\reshape\concat.py", line 381, in concat
+    return op.get_result()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\reshape\concat.py", line 616, in get_result
+    new_data = concatenate_managers(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\concat.py", line 212, in concatenate_managers
+    values = values.copy()
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 335. MiB for an array with shape (16, 2747309) and data type float64
+
+--------------------------------------------------------------------------------
+1 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 270, in fit
+    X, y, _ = self._fit(X, y, **fit_params_steps)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 246, in _fit
+    fitted_transformer = self._memory_fit(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\memory.py", line 353, in __call__
+    return self.func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 68, in _fit_one
+    transformer.fit(*args, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\preprocess\transformers.py", line 229, in fit
+    self.transformer.fit(*args, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\utils.py", line 315, in fit
+    X_transformed = self.transform(X, override_return_df=True)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\utils.py", line 488, in transform
+    X = self._transform(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 195, in _transform
+    X = self.get_dummies(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 269, in get_dummies
+    X = pd.concat([base_df, X], axis=1)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\reshape\concat.py", line 381, in concat
+    return op.get_result()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\reshape\concat.py", line 616, in get_result
+    new_data = concatenate_managers(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\concat.py", line 212, in concatenate_managers
+    values = values.copy()
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 524. MiB for an array with shape (25, 2747309) and data type float64
+
+--------------------------------------------------------------------------------
+1 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 270, in fit
+    X, y, _ = self._fit(X, y, **fit_params_steps)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 246, in _fit
+    fitted_transformer = self._memory_fit(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\memory.py", line 353, in __call__
+    return self.func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 68, in _fit_one
+    transformer.fit(*args, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\preprocess\transformers.py", line 229, in fit
+    self.transformer.fit(*args, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\utils.py", line 315, in fit
+    X_transformed = self.transform(X, override_return_df=True)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\utils.py", line 488, in transform
+    X = self._transform(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 195, in _transform
+    X = self.get_dummies(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 274, in get_dummies
+    X = X.reindex(columns=cols)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\util\_decorators.py", line 347, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\frame.py", line 5205, in reindex
+    return super().reindex(**kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\generic.py", line 5273, in reindex
+    self._consolidate_inplace()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\generic.py", line 5980, in _consolidate_inplace
+    self._protect_consolidate(f)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\generic.py", line 5968, in _protect_consolidate
+    result = f()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\generic.py", line 5978, in f
+    self._mgr = self._mgr.consolidate()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\managers.py", line 686, in consolidate
+    bm._consolidate_inplace()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\managers.py", line 1871, in _consolidate_inplace
+    self.blocks = _consolidate(self.blocks)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\managers.py", line 2329, in _consolidate
+    merged_blocks, _ = _merge_blocks(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\managers.py", line 2388, in _merge_blocks
+    new_values = new_values[argsort]
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 1.94 GiB for an array with shape (95, 2747309) and data type float64
+
+--------------------------------------------------------------------------------
+1 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 270, in fit
+    X, y, _ = self._fit(X, y, **fit_params_steps)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 253, in _fit
+    X, y = self._memory_transform(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\memory.py", line 353, in __call__
+    return self.func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 79, in _transform_one
+    output = transformer.transform(*args)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\preprocess\transformers.py", line 255, in transform
+    output = self.transformer.transform(*args)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\utils.py", line 488, in transform
+    X = self._transform(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 195, in _transform
+    X = self.get_dummies(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 269, in get_dummies
+    X = pd.concat([base_df, X], axis=1)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\reshape\concat.py", line 381, in concat
+    return op.get_result()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\reshape\concat.py", line 616, in get_result
+    new_data = concatenate_managers(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\concat.py", line 212, in concatenate_managers
+    values = values.copy()
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 335. MiB for an array with shape (16, 2747310) and data type float64
+
+--------------------------------------------------------------------------------
+1 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 270, in fit
+    X, y, _ = self._fit(X, y, **fit_params_steps)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 246, in _fit
+    fitted_transformer = self._memory_fit(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\memory.py", line 353, in __call__
+    return self.func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 68, in _fit_one
+    transformer.fit(*args, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\preprocess\transformers.py", line 229, in fit
+    self.transformer.fit(*args, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\utils.py", line 315, in fit
+    X_transformed = self.transform(X, override_return_df=True)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\utils.py", line 488, in transform
+    X = self._transform(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 195, in _transform
+    X = self.get_dummies(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 269, in get_dummies
+    X = pd.concat([base_df, X], axis=1)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\reshape\concat.py", line 381, in concat
+    return op.get_result()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\reshape\concat.py", line 616, in get_result
+    new_data = concatenate_managers(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\concat.py", line 212, in concatenate_managers
+    values = values.copy()
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 126. MiB for an array with shape (6, 2747310) and data type float64
+
+  warnings.warn(some_fits_failed_message, FitFailedWarning)
+
+2024-02-07 12:06:36,754:INFO:Calculating mean and std
+2024-02-07 12:06:36,809:INFO:Creating metrics dataframe
+2024-02-07 12:06:36,918:INFO:Uploading results into container
+2024-02-07 12:06:36,928:INFO:Uploading model into container now
+2024-02-07 12:06:36,945:INFO:_master_model_container: 2
+2024-02-07 12:06:36,945:INFO:_display_container: 2
+2024-02-07 12:06:36,964:INFO:LGBMRegressor(n_jobs=-1, random_state=1)
+2024-02-07 12:06:36,965:INFO:create_model() successfully completed......................................
+2024-02-07 12:06:38,404:WARNING:create_model() for LGBMRegressor(n_jobs=-1, random_state=1) raised an exception or returned all 0.0, trying without fit_kwargs:
+2024-02-07 12:06:38,406:WARNING:Traceback (most recent call last):
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    assert (
+AssertionError
+
+2024-02-07 12:06:38,406:INFO:Initializing create_model()
+2024-02-07 12:06:38,407:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EB26C1EAD0>, estimator=lightgbm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EB2A526EC0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-07 12:06:38,407:INFO:Checking exceptions
+2024-02-07 12:06:38,407:INFO:Importing libraries
+2024-02-07 12:06:38,408:INFO:Copying training dataset
+2024-02-07 12:06:40,137:INFO:Defining folds
+2024-02-07 12:06:40,137:INFO:Declaring metric variables
+2024-02-07 12:06:40,146:INFO:Importing untrained model
+2024-02-07 12:06:40,151:INFO:Light Gradient Boosting Machine Imported successfully
+2024-02-07 12:06:40,161:INFO:Starting cross validation
+2024-02-07 12:06:40,165:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-07 12:06:40,758:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_split.py:700: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=10.
+  warnings.warn(
+
+2024-02-07 12:09:42,993:ERROR:create_model() for LGBMRegressor(n_jobs=-1, random_state=1) raised an exception or returned all 0.0:
+2024-02-07 12:09:43,004:ERROR:joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\externals\loky\backend\queues.py", line 159, in _feed
+    obj_ = dumps(obj, reducers=reducers)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\externals\loky\backend\reduction.py", line 215, in dumps
+    dump(obj, buf, reducers=reducers, protocol=protocol)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\externals\loky\backend\reduction.py", line 208, in dump
+    _LokyPickler(file, reducers=reducers, protocol=protocol).dump(obj)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\externals\cloudpickle\cloudpickle_fast.py", line 632, in dump
+    return Pickler.dump(self, obj)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\_memmapping_reducer.py", line 446, in __call__
+    for dumped_filename in dump(a, filename):
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\numpy_pickle.py", line 553, in dump
+    NumpyPickler(f, protocol=protocol).dump(value)
+  File "c:\Program Files\Python310\lib\pickle.py", line 487, in dump
+    self.save(obj)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\numpy_pickle.py", line 352, in save
+    wrapper.write_array(obj, self)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\numpy_pickle.py", line 134, in write_array
+    pickler.file_handle.write(chunk.tobytes('C'))
+OSError: [Errno 28] No space left on device
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 815, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1533, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1126, in _create_model_with_cv
+    scores = cross_validate(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\parallel.py", line 63, in __call__
+    return super().__call__(iterable_with_config)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+_pickle.PicklingError: Could not pickle the task to send it to the workers.
+
+2024-02-07 12:09:43,031:INFO:Initializing Random Forest Regressor
+2024-02-07 12:09:43,032:INFO:Total runtime is 19.12582700252533 minutes
+2024-02-07 12:09:43,123:INFO:SubProcess create_model() called ==================================
+2024-02-07 12:09:43,131:INFO:Initializing create_model()
+2024-02-07 12:09:43,131:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EB26C1EAD0>, estimator=rf, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EB2A526EC0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-07 12:09:43,131:INFO:Checking exceptions
+2024-02-07 12:09:43,131:INFO:Importing libraries
+2024-02-07 12:09:43,134:INFO:Copying training dataset
+2024-02-07 12:09:45,183:INFO:Defining folds
+2024-02-07 12:09:45,184:INFO:Declaring metric variables
+2024-02-07 12:09:45,190:INFO:Importing untrained model
+2024-02-07 12:09:45,201:INFO:Random Forest Regressor Imported successfully
+2024-02-07 12:09:45,216:INFO:Starting cross validation
+2024-02-07 12:09:45,230:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-07 12:09:46,008:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_split.py:700: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=10.
+  warnings.warn(
+
+2024-02-07 13:44:56,565:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_validation.py:378: FitFailedWarning: 
+9 fits failed out of a total of 10.
+The score on these train-test partitions for these parameters will be set to 0.0.
+If these failures are not expected, you can try to debug them by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+2 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 270, in fit
+    X, y, _ = self._fit(X, y, **fit_params_steps)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 253, in _fit
+    X, y = self._memory_transform(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\memory.py", line 353, in __call__
+    return self.func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 79, in _transform_one
+    output = transformer.transform(*args)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\preprocess\transformers.py", line 255, in transform
+    output = self.transformer.transform(*args)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\utils.py", line 488, in transform
+    X = self._transform(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 195, in _transform
+    X = self.get_dummies(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 269, in get_dummies
+    X = pd.concat([base_df, X], axis=1)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\reshape\concat.py", line 381, in concat
+    return op.get_result()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\reshape\concat.py", line 616, in get_result
+    new_data = concatenate_managers(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\concat.py", line 212, in concatenate_managers
+    values = values.copy()
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 524. MiB for an array with shape (25, 2747309) and data type float64
+
+--------------------------------------------------------------------------------
+1 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 270, in fit
+    X, y, _ = self._fit(X, y, **fit_params_steps)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 253, in _fit
+    X, y = self._memory_transform(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\memory.py", line 353, in __call__
+    return self.func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 79, in _transform_one
+    output = transformer.transform(*args)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\preprocess\transformers.py", line 263, in transform
+    new_X = self._prepare_df(X, output)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\preprocess\transformers.py", line 196, in _prepare_df
+    return self._reorder_cols(out, X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\preprocess\transformers.py", line 169, in _reorder_cols
+    new_df = df.merge(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\frame.py", line 10093, in merge
+    return merge(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\reshape\merge.py", line 124, in merge
+    return op.get_result(copy=copy)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\reshape\merge.py", line 775, in get_result
+    result = self._reindex_and_concat(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\reshape\merge.py", line 766, in _reindex_and_concat
+    result = concat([left, right], axis=1, copy=copy)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\reshape\concat.py", line 381, in concat
+    return op.get_result()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\reshape\concat.py", line 616, in get_result
+    new_data = concatenate_managers(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\concat.py", line 233, in concatenate_managers
+    values = _concatenate_join_units(join_units, concat_axis, copy=copy)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\concat.py", line 542, in _concatenate_join_units
+    to_concat = [
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\concat.py", line 543, in <listcomp>
+    ju.get_reindexed_values(empty_dtype=empty_dtype, upcasted_na=upcasted_na)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\concat.py", line 522, in get_reindexed_values
+    values = algos.take_nd(values, indexer, axis=ax)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\array_algos\take.py", line 117, in take_nd
+    return _take_nd_ndarray(arr, indexer, axis, fill_value, allow_fill)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\array_algos\take.py", line 158, in _take_nd_ndarray
+    out = np.empty(out_shape, dtype=dtype)
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 1.92 GiB for an array with shape (94, 2747309) and data type float64
+
+--------------------------------------------------------------------------------
+1 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 270, in fit
+    X, y, _ = self._fit(X, y, **fit_params_steps)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 246, in _fit
+    fitted_transformer = self._memory_fit(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\memory.py", line 353, in __call__
+    return self.func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 68, in _fit_one
+    transformer.fit(*args, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\preprocess\transformers.py", line 229, in fit
+    self.transformer.fit(*args, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\utils.py", line 315, in fit
+    X_transformed = self.transform(X, override_return_df=True)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\utils.py", line 488, in transform
+    X = self._transform(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 195, in _transform
+    X = self.get_dummies(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 274, in get_dummies
+    X = X.reindex(columns=cols)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\util\_decorators.py", line 347, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\frame.py", line 5205, in reindex
+    return super().reindex(**kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\generic.py", line 5273, in reindex
+    self._consolidate_inplace()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\generic.py", line 5980, in _consolidate_inplace
+    self._protect_consolidate(f)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\generic.py", line 5968, in _protect_consolidate
+    result = f()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\generic.py", line 5978, in f
+    self._mgr = self._mgr.consolidate()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\managers.py", line 686, in consolidate
+    bm._consolidate_inplace()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\managers.py", line 1871, in _consolidate_inplace
+    self.blocks = _consolidate(self.blocks)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\managers.py", line 2329, in _consolidate
+    merged_blocks, _ = _merge_blocks(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\managers.py", line 2388, in _merge_blocks
+    new_values = new_values[argsort]
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 1.94 GiB for an array with shape (95, 2747309) and data type float64
+
+--------------------------------------------------------------------------------
+1 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 270, in fit
+    X, y, _ = self._fit(X, y, **fit_params_steps)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 246, in _fit
+    fitted_transformer = self._memory_fit(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\memory.py", line 353, in __call__
+    return self.func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 68, in _fit_one
+    transformer.fit(*args, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\preprocess\transformers.py", line 229, in fit
+    self.transformer.fit(*args, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\utils.py", line 315, in fit
+    X_transformed = self.transform(X, override_return_df=True)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\utils.py", line 488, in transform
+    X = self._transform(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 195, in _transform
+    X = self.get_dummies(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 274, in get_dummies
+    X = X.reindex(columns=cols)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\util\_decorators.py", line 347, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\frame.py", line 5205, in reindex
+    return super().reindex(**kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\generic.py", line 5273, in reindex
+    self._consolidate_inplace()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\generic.py", line 5980, in _consolidate_inplace
+    self._protect_consolidate(f)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\generic.py", line 5968, in _protect_consolidate
+    result = f()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\generic.py", line 5978, in f
+    self._mgr = self._mgr.consolidate()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\managers.py", line 686, in consolidate
+    bm._consolidate_inplace()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\managers.py", line 1871, in _consolidate_inplace
+    self.blocks = _consolidate(self.blocks)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\managers.py", line 2329, in _consolidate
+    merged_blocks, _ = _merge_blocks(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\managers.py", line 2381, in _merge_blocks
+    new_values = np.vstack([b.values for b in blocks])  # type: ignore[misc]
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\numpy\core\shape_base.py", line 289, in vstack
+    return _nx.concatenate(arrs, 0, dtype=dtype, casting=casting)
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 1.94 GiB for an array with shape (95, 2747309) and data type float64
+
+--------------------------------------------------------------------------------
+1 fits failed with the following error:
+joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\_parallel_backends.py", line 273, in _wrap_func_call
+    return func()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\parallel.py", line 589, in __call__
+    return [func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\parallel.py", line 589, in <listcomp>
+    return [func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\parallel.py", line 123, in __call__
+    return self.function(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\ensemble\_forest.py", line 184, in _parallel_build_trees
+    tree.fit(X, y, sample_weight=curr_sample_weight, check_input=False)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\tree\_classes.py", line 1247, in fit
+    super().fit(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\tree\_classes.py", line 379, in fit
+    builder.build(self.tree_, X, y, sample_weight)
+  File "sklearn\tree\_tree.pyx", line 147, in sklearn.tree._tree.DepthFirstTreeBuilder.build
+  File "sklearn\tree\_tree.pyx", line 242, in sklearn.tree._tree.DepthFirstTreeBuilder.build
+  File "sklearn\tree\_tree.pyx", line 748, in sklearn.tree._tree.Tree._add_node
+  File "sklearn\tree\_tree.pyx", line 719, in sklearn.tree._tree.Tree._resize_c
+  File "sklearn\tree\_utils.pyx", line 35, in sklearn.tree._utils.safe_realloc
+MemoryError: could not allocate 58720256 bytes
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 275, in fit
+    fitted_estimator = self._memory_fit(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\memory.py", line 353, in __call__
+    return self.func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 68, in _fit_one
+    transformer.fit(*args, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\ensemble\_forest.py", line 473, in fit
+    trees = Parallel(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\parallel.py", line 63, in __call__
+    return super().__call__(iterable_with_config)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+MemoryError: could not allocate 58720256 bytes
+
+--------------------------------------------------------------------------------
+1 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 270, in fit
+    X, y, _ = self._fit(X, y, **fit_params_steps)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 246, in _fit
+    fitted_transformer = self._memory_fit(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\memory.py", line 353, in __call__
+    return self.func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 68, in _fit_one
+    transformer.fit(*args, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\preprocess\transformers.py", line 229, in fit
+    self.transformer.fit(*args, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\utils.py", line 315, in fit
+    X_transformed = self.transform(X, override_return_df=True)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\utils.py", line 488, in transform
+    X = self._transform(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 195, in _transform
+    X = self.get_dummies(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 268, in get_dummies
+    base_df = base_df.set_index(X.index)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\frame.py", line 6017, in set_index
+    frame = self.copy()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\generic.py", line 6368, in copy
+    data = self._mgr.copy(deep=deep)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\managers.py", line 649, in copy
+    res = self.apply("copy", deep=deep)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\managers.py", line 352, in apply
+    applied = getattr(b, f)(**kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\blocks.py", line 549, in copy
+    values = values.copy()
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 524. MiB for an array with shape (25, 2747310) and data type float64
+
+--------------------------------------------------------------------------------
+1 fits failed with the following error:
+joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\_parallel_backends.py", line 273, in _wrap_func_call
+    return func()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\parallel.py", line 589, in __call__
+    return [func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\parallel.py", line 589, in <listcomp>
+    return [func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\parallel.py", line 123, in __call__
+    return self.function(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\ensemble\_forest.py", line 184, in _parallel_build_trees
+    tree.fit(X, y, sample_weight=curr_sample_weight, check_input=False)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\tree\_classes.py", line 1247, in fit
+    super().fit(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\tree\_classes.py", line 379, in fit
+    builder.build(self.tree_, X, y, sample_weight)
+  File "sklearn\tree\_tree.pyx", line 147, in sklearn.tree._tree.DepthFirstTreeBuilder.build
+  File "sklearn\tree\_tree.pyx", line 242, in sklearn.tree._tree.DepthFirstTreeBuilder.build
+  File "sklearn\tree\_tree.pyx", line 748, in sklearn.tree._tree.Tree._add_node
+  File "sklearn\tree\_tree.pyx", line 719, in sklearn.tree._tree.Tree._resize_c
+  File "sklearn\tree\_utils.pyx", line 35, in sklearn.tree._utils.safe_realloc
+MemoryError: could not allocate 234881024 bytes
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 275, in fit
+    fitted_estimator = self._memory_fit(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\memory.py", line 353, in __call__
+    return self.func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 68, in _fit_one
+    transformer.fit(*args, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\ensemble\_forest.py", line 473, in fit
+    trees = Parallel(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\parallel.py", line 63, in __call__
+    return super().__call__(iterable_with_config)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+MemoryError: could not allocate 234881024 bytes
+
+--------------------------------------------------------------------------------
+1 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 270, in fit
+    X, y, _ = self._fit(X, y, **fit_params_steps)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 246, in _fit
+    fitted_transformer = self._memory_fit(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\joblib\memory.py", line 353, in __call__
+    return self.func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pipeline.py", line 68, in _fit_one
+    transformer.fit(*args, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\preprocess\transformers.py", line 229, in fit
+    self.transformer.fit(*args, **fit_params)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\utils.py", line 315, in fit
+    X_transformed = self.transform(X, override_return_df=True)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\utils.py", line 488, in transform
+    X = self._transform(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\one_hot.py", line 189, in _transform
+    X = self.ordinal_encoder.transform(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\utils.py", line 488, in transform
+    X = self._transform(X)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\ordinal.py", line 113, in _transform
+    X, _ = self.ordinal_encoding(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\category_encoders\ordinal.py", line 198, in ordinal_encoding
+    X[column] = X[column].astype("object").fillna(np.nan).map(col_mapping)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\series.py", line 5298, in fillna
+    return super().fillna(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\generic.py", line 6842, in fillna
+    new_data = self._mgr.fillna(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\managers.py", line 443, in fillna
+    return self.apply(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\managers.py", line 352, in apply
+    applied = getattr(b, f)(**kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\blocks.py", line 1189, in fillna
+    nbs = nb._maybe_downcast([nb], downcast=downcast)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\blocks.py", line 464, in _maybe_downcast
+    [blk.convert(datetime=True, numeric=False) for blk in blocks]
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\blocks.py", line 464, in <listcomp>
+    [blk.convert(datetime=True, numeric=False) for blk in blocks]
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\blocks.py", line 133, in newfunc
+    return meth(self, *args, **kwargs)
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\internals\blocks.py", line 2065, in convert
+    res_values = soft_convert_objects(
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pandas\core\dtypes\cast.py", line 1055, in soft_convert_objects
+    converted = lib.maybe_convert_objects(
+  File "pandas\_libs\lib.pyx", line 2518, in pandas._libs.lib.maybe_convert_objects
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 21.0 MiB for an array with shape (2747310,) and data type datetime64[ns]
+
+  warnings.warn(some_fits_failed_message, FitFailedWarning)
+
+2024-02-07 13:44:56,606:INFO:Calculating mean and std
+2024-02-07 13:44:56,669:INFO:Creating metrics dataframe
+2024-02-07 13:44:56,773:INFO:Uploading results into container
+2024-02-07 13:44:56,781:INFO:Uploading model into container now
+2024-02-07 13:44:56,798:INFO:_master_model_container: 3
+2024-02-07 13:44:56,798:INFO:_display_container: 2
+2024-02-07 13:44:56,808:INFO:RandomForestRegressor(n_jobs=-1, random_state=1)
+2024-02-07 13:44:56,809:INFO:create_model() successfully completed......................................
+2024-02-07 13:44:57,959:WARNING:create_model() for RandomForestRegressor(n_jobs=-1, random_state=1) raised an exception or returned all 0.0, trying without fit_kwargs:
+2024-02-07 13:44:57,962:WARNING:Traceback (most recent call last):
+  File "C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    assert (
+AssertionError
+
+2024-02-07 13:44:57,963:INFO:Initializing create_model()
+2024-02-07 13:44:57,964:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EB26C1EAD0>, estimator=rf, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EB2A526EC0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-07 13:44:57,965:INFO:Checking exceptions
+2024-02-07 13:44:57,965:INFO:Importing libraries
+2024-02-07 13:44:57,966:INFO:Copying training dataset
+2024-02-07 13:45:45,991:INFO:Defining folds
+2024-02-07 13:45:45,991:INFO:Declaring metric variables
+2024-02-07 13:45:46,001:INFO:Importing untrained model
+2024-02-07 13:45:46,010:INFO:Random Forest Regressor Imported successfully
+2024-02-07 13:45:46,025:INFO:Starting cross validation
+2024-02-07 13:45:46,037:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-07 13:45:46,991:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_split.py:700: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=10.
+  warnings.warn(
+
+2024-02-07 13:52:32,498:WARNING:C:\Users\chaechae\AppData\Roaming\Python\Python310\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
